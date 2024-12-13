@@ -1,0 +1,62 @@
+.rounded-button {
+  padding: 10px 20px;
+  margin: 10px;
+  width: 80%;
+  border-radius: 15px;
+  border: 2px solid #6600ff;
+  background-color: #8e42ff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.5s, border-color 0.5s;
+  /* Aggiunge una transizione */
+}
+
+.rounded-button-box {
+  width: 70%;
+  height: 8.5%;
+  padding: 10px;
+}
+
+.rule-button {
+  border: 0px solid #6600ff;
+  background-color: #b07cfd;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.5s, border-color 0.5s;
+  /* Aggiunge una transizione */
+}
+
+
+.selected {
+  background-color: #ddc330;
+  border: 2px solid #ffd900;
+  color: #fff;
+}
+
+.correct {
+  background-color: #00ff00;
+  border: 2px solid #00ff00;
+  color: #fff;
+}
+
+.wrong {
+  background-color: #ff0000;
+  border: 2px solid #ff0000;
+  color: #fff;
+}
+
+
+
+.rounded-button:hover {
+  filter: drop-shadow(0 0 1em #ffe240);
+}
+
+.rounded-button.react:hover {
+  filter: drop-shadow(0 0 1em #ff7300);
+}

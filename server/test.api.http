@@ -1,0 +1,192 @@
+###
+# POST /api/users
+# Create a new user
+###
+
+POST http://localhost:3001/api/users
+Content-Type: application/json
+
+{
+  "username": "RAF",
+  "password": "123456"
+}
+
+###
+# POST /api/sessions
+# Perform login
+###
+
+POST http://localhost:3001/api/sessions
+Content-Type: application/json
+
+{
+  "username": "RAF",
+  "password": "123456"
+}
+
+###
+# GET /api/sessions/current
+# Check if user is authenticated
+###
+
+GET http://localhost:3001/api/sessions/current
+
+###
+# DELETE /api/sessions/current
+# Logout current user
+###
+
+DELETE http://localhost:3001/api/sessions/current
+###
+# GET /api/captions
+# Ottieni tutte le caption
+###
+
+GET http://localhost:3001/api/captions
+
+###
+# GET /api/captions/:id
+# Ottieni una caption per ID
+###
+
+GET http://localhost:3001/api/captions/1
+###
+# GET /api/captions/:id
+# Ottieni una caption per ID
+###
+
+GET http://localhost:3001/api/captions/meme/1
+###
+# POST /api/games
+# Crea un nuovo gioco
+###
+
+POST http://localhost:3001/api/games
+Content-Type: application/json
+
+{
+  "username": "RAF",
+  "start_time": "2024-06-20T12:00:00Z",
+  "end_time": "2024-06-20T13:00:00Z",
+  "total_score": 100
+}
+
+###
+# GET /api/games/:id
+# Ottieni un gioco per ID
+###
+
+GET http://localhost:3001/api/games/3
+
+###
+# GET /api/users/:user_id/games
+# Ottieni tutti i giochi per user_id
+###
+
+GET http://localhost:3001/api/users/RAF/games
+
+###
+# PUT /api/games/:id
+# Aggiorna un gioco per ID
+###
+
+PUT http://localhost:3001/api/games/1
+Content-Type: application/json
+
+{
+  "end_time": "2024-06-20T14:00:00Z",
+  "total_score": 150
+}
+
+###
+# DELETE /api/games/:id
+# Elimina un gioco per ID
+###
+
+DELETE http://localhost:3001/api/games/1
+###
+# GET /api/meme-captions
+# Ottieni tutte le associazioni tra meme e caption
+###
+
+GET http://localhost:3001/api/meme-captions
+
+###
+# GET /api/meme-captions/:meme_id
+# Ottieni le associazioni tra meme e caption per un meme specifico
+###
+
+GET http://localhost:3001/api/meme-captions/meme/1
+
+###
+# GET /api/memes
+# Ottieni tutti i memes
+###
+
+GET http://localhost:3001/api/memes
+
+###
+# GET /api/memes/:id
+# Ottieni un meme specifico per ID
+###
+
+GET http://localhost:3001/api/memes/1
+###
+# GET /api/memes/:id
+# Ottieni un meme specifico per ID
+###
+
+POST http://localhost:3001/api/memes/random
+Content-Type: application/json
+  
+  {
+    "meme1_Id": 1,
+    "meme2_Id": 2
+  }
+
+
+POST http://localhost:3001/api/rounds
+Content-Type: application/json
+
+{
+  "game_id": 1,
+  "meme_id": 1,
+  "selectedCaption_id": "1",
+  "is_correct": true,
+  "score": 100
+}
+
+###
+# GET /api/rounds/:id
+# Ottieni un round per ID
+###
+
+GET http://localhost:3001/api/rounds/1
+
+###
+# GET /api/games/:game_id/rounds
+# Ottieni tutti i round per un game_id specifico
+###
+
+GET http://localhost:3001/api/games/1/rounds
+
+###
+# PUT /api/rounds/:id
+# Aggiorna un round per ID
+###
+
+PUT http://localhost:3001/api/rounds/1
+Content-Type: application/json
+
+{
+  "selectedCaption_id": "2",
+  "is_correct": false,
+  "score": 80
+}
+
+###
+# DELETE /api/rounds/:id
+# Elimina un round per ID
+###
+
+DELETE http://localhost:3001/api/rounds/1

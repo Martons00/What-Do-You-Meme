@@ -1,0 +1,64 @@
+.homepage {
+  padding: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: 2px solid #6600ff;
+  background-color: #b07cfd;
+}
+
+.rules {
+  border-radius: 15px;
+  padding: 20px;
+  border: 2px solid #6600ff;
+  background-color: #c69fff;
+}
+
+h1 {
+  color: #fff;
+}
+
+.rules,
+.cta,
+.register-login {
+  margin-top: 20px;
+}
+
+
+h2,
+h3,
+strong {
+  color: #fff;
+}
+
+p {
+  line-height: 1.6;
+  color: #fff;
+}
+
+
+.rule li {
+  margin: 10px 0;
+}
+
+
+.li {
+  font-size: 1.5em;
+  /* Grandezza del testo */
+  color: white;
+  /* Colore del testo */
+}
+
+.li::marker {
+  color: #FFFFFF;
+  /* Colore dei numeri */
+}
+
+.game {
+  border-radius: 15px;
+  margin: 20px;
+  border: 2px solid #6600ff;
+  background-color: #c69fff;
+}

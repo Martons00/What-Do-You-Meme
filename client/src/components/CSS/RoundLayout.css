@@ -1,0 +1,33 @@
+.image-box {
+  border-radius: 15px;
+  padding: 20px;
+  justify-content: center;
+  border: 2px solid #6600ff;
+  background-color: #7d27ff;
+}
+
+.result-box-correct {
+  margin: "10px";
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #52ff52;
+}
+
+.result-box-wrong {
+  margin: "10px";
+  border-radius: 15px;
+  padding: 20px;
+  background-color: #ff5c5c;
+}
+
+.round {
+  margin: "10px";
+  border-radius: 15px;
+  padding: 20px;
+  border: 2px solid #6600ff;
+  background-color: #c69fff;
+}
+
+.modal-content {
+  border-radius: 15px;
+}

@@ -1,0 +1,63 @@
+#root {
+  max-height: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Comic Sans MS, sans-serif;
+}
+
+.row-round {
+  margin-top: 10px;
+}
+
+.image {
+  will-change: filter;
+  transition: filter 300ms;
+  width: 100%;
+  /* L'immagine riempie la larghezza del contenitore */
+  height: auto;
+  /* Mantiene le proporzioni dell'immagine */
+  object-fit: cover;
+  /* Adatta l'immagine al contenitore senza deformarla */
+}
+
+.image:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.image.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.container-app {
+  background-color: #9f64ffaa;
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.footer {
+  padding: 5px;
+  background-color: #6600ff;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+.read-the-docs {
+  color: #888;
+}
